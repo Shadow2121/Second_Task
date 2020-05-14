@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>837</width>
-    <height>487</height>
+    <width>959</width>
+    <height>589</height>
    </rect>
   </property>
   <property name="font">
@@ -61,14 +61,32 @@
      </layout>
     </item>
     <item>
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>HISTORY</string>
-      </property>
-     </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>HISTORY</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>PLAY-LIST</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
-     <widget class="QListWidget" name="listWidget"/>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QListWidget" name="listWidget"/>
+      </item>
+      <item>
+       <widget class="QListWidget" name="listWidget_2"/>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
@@ -77,7 +95,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>837</width>
+     <width>959</width>
      <height>21</height>
     </rect>
    </property>
@@ -94,6 +112,8 @@
      <string>File</string>
     </property>
     <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionmake_a_play_list"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuAudio"/>
@@ -115,6 +135,7 @@
    <addaction name="actionPause"/>
    <addaction name="actionStop"/>
    <addaction name="separator"/>
+   <addaction name="actionmake_a_play_list"/>
   </widget>
   <action name="actionPlay">
    <property name="icon">
@@ -150,6 +171,11 @@
    </property>
    <property name="text">
     <string>Open</string>
+   </property>
+  </action>
+  <action name="actionmake_a_play_list">
+   <property name="text">
+    <string>make a play list</string>
    </property>
   </action>
  </widget>

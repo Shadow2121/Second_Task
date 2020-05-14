@@ -76,3 +76,15 @@ void MainWindow::on_listWidget_itemClicked(QListWidgetItem *item)
     player->setMedia(QUrl::fromLocalFile(ui->listWidget->currentItem()->text()));
     on_actionPlay_triggered();
 }
+
+void MainWindow::on_actionmake_a_play_list_triggered()
+{
+    QString Filename =QFileDialog::getOpenFileName(this,"Open the file");
+    ui->listWidget_2->addItem(Filename);
+}
+
+void MainWindow::on_listWidget_2_itemClicked(QListWidgetItem *item)
+{
+    player->setMedia(QUrl::fromLocalFile(ui->listWidget_2->currentItem()->text()));
+    on_actionPlay_triggered();
+}

@@ -42,6 +42,10 @@ private slots:
 
     void on_listWidget_itemClicked(QListWidgetItem *item);
 
+    void on_actionmake_a_play_list_triggered();
+
+    void on_listWidget_2_itemClicked(QListWidgetItem *item);
+
 private:
     Ui::MainWindow *ui;
     QMediaPlayer *player;
