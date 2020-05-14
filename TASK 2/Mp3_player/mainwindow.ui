@@ -61,14 +61,14 @@
      </layout>
     </item>
     <item>
-     <widget class="QListWidget" name="listWidget"/>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>PushButton</string>
+       <string>HISTORY</string>
       </property>
      </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listWidget"/>
     </item>
    </layout>
   </widget>
