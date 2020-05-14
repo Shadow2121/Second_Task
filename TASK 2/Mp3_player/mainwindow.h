@@ -10,6 +10,7 @@
 #include<QDialog>
 #include<QMediaPlayer>
 #include<QtDebug>
+#include <QListWidgetItem>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -38,6 +39,8 @@ private slots:
     void on_positionChanged(qint64 position);
 
     void on_durationChanged(qint64 position);
+
+    void on_listWidget_itemClicked(QListWidgetItem *item);
 
 private:
     Ui::MainWindow *ui;
